@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
 * {
   margin: 0;
-  font-family: "Cherry Bomb One";
+  font-family: "Playwrite DE Grund";
   color: #333;
 }
 
