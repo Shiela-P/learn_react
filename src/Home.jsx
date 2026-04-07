@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import BlogList from './BlogList';
 // shortcut sfc (stateless functional component)
 const Home = () => {
@@ -7,10 +7,20 @@ const Home = () => {
         {title: "A day in the life of an Oreo Cookie Tester", body: "Lorem ipsum...", author: "Myself", id:"2"},
         {title: "I make 6 figures just playing with puppies all day", body: "Loerm ipsum...", author: "I", id:"3"}
     ]);
+
+    const handleDelete = (id) => {
+        // Creates a new array of blogs using evrything except the excluded id
+        const newBlogs = blogs.filter(blog => blog.id !== id)
+        setBlogs(newBlogs);
+    }
+
+    useEffect(() => {
+        // alert("test");
+    })
+
     return ( 
         <div className="home">
-           <BlogList blogs={blogs} title="My Blogs"/>
-           <BlogList blogs={blogs.filter((blog) => blog.id === "2" )} title="Blogs About Oreos"/>
+           <BlogList blogs={blogs} title="My Blogs" handleDelete={handleDelete}/>
         </div>
      );
 }
