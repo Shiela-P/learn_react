@@ -1,0 +1,17 @@
+{
+    "blogs":[
+        {
+            "title": "Creativity",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+            "author": "Me",
+            "id": 1
+        },
+        {
+            "title": "Cool Color Combinations",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+            "author": "Myself",
+            "id": 2
+        }
+
+    ]
+}
